@@ -1,9 +1,3 @@
-<script setup>
-import Header from "./components/layout/Header.vue";
-import Footer from "./components/layout/Footer.vue";
-import Sidebar from "./components/layout/Sidebar.vue";
-</script>
-
 <template>
   <div class="h-screen flex">
     <Sidebar/>
@@ -16,6 +10,13 @@ import Sidebar from "./components/layout/Sidebar.vue";
     </div>
   </div>
 </template>
+
+<script setup>
+import Header from "./components/layout/Header.vue";
+import Footer from "./components/layout/Footer.vue";
+import Sidebar from "./components/layout/Sidebar.vue";
+
+</script>
 
 <style scoped>
 
