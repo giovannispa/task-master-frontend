@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="url" class="inline-flex relative items-center w-full px-2.5 py-2.5 text-sm font-medium rounded-md border-gray-200 hover:bg-gray-300 hover:text-gray-800">
+  <router-link :to="url" class="flex items-center gap-x-4 border-gray-200 hover:bg-gray-300 hover:text-gray-800 px-2.5 py-2.5 rounded text-white">
     <slot/>
   </router-link>
 </template>

@@ -1,41 +1,51 @@
 <template>
   <!-- Sidebar -->
-  <div class="h-full bg-gray-200 text-white transition-all
-              duration-200 ease-in-out" :style="{ width: sidebarWidth }">
-    <div class="h-12 bg-gray-700 flex justify-center items-center">
-      <div class="px-5">
-        <h3 class="font-bold text-xl">Task Master</h3>
-      </div>
-    </div>
-    <div class="h-full bg-gray-800 py-4">
-      <div class="px-5 flex flex-col justify-between space-y-2.5">
+  <aside class="flex w-64 flex-col pt-18 pb-6 bg-gray-800">
+    <a class="flex items-center justify-center gap-x-4 text-2xl font-medium text-white bg-gray-700 h-12">
+      <span>
+        Task Master
+      </span>
+    </a>
+
+    <ul class="flex flex-1 flex-col gap-y-8 px-8 pt-8">
+      <li>
         <NavLink url="/">
           <IconHome/>
           Home
         </NavLink>
+      </li>
+      <li>
         <NavLink url="/projetos">
           <IconProjects/>
           Projetos
         </NavLink>
+      </li>
+      <li>
         <NavLink url="/tarefas">
           <IconIssues/>
           Tarefas
         </NavLink>
+      </li>
+      <li>
         <NavLink url="/equipes">
           <IconTeams/>
           Equipes
         </NavLink>
+      </li>
+      <li>
         <NavLink url="/relatorios">
           <IconReport/>
           Relatórios
         </NavLink>
+      </li>
+      <li>
         <NavLink url="/usuarios">
           <IconUsers/>
           Usuários
         </NavLink>
-      </div>
-    </div>
-  </div>
+      </li>
+    </ul>
+  </aside>
   <!-- End sidebar -->
 </template>
 
