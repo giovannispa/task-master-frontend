@@ -1,13 +1,15 @@
 <template>
-  <div class="h-screen flex">
+  <div class="flex min-h-screen w-full font-sans bg-gray-300">
     <Sidebar/>
-    <div class="w-full h-full">
-      <Header/>
-      <div class="w-full h-full">
-        <router-view />
+    <main class="flex min-h-screen flex-1 flex-col">
+      <Header />
+      <div class="w-full">
+        <div class="w-full min-h-screen">
+          <router-view />
+        </div>
       </div>
       <Footer/>
-    </div>
+    </main>
   </div>
 </template>
 
