@@ -1,6 +1,6 @@
 <template>
   <!-- Header -->
-  <div class="h-12 bg-gray-100 flex items-center justify-between
+  <nav class="flex items-center justify-between h-12 bg-gray-100
               shadow-sm px-5 py-2.5 w-full z-10 border-b">
     <IconToggle @click="toggleSidebar" class="cursor-pointer"/>
     <Dropdown :title="{ src: '/user.png' }">
@@ -15,7 +15,7 @@
         </div>
       </DropdownItem>
     </Dropdown>
-  </div>
+  </nav>
   <!-- End header -->
 </template>
 
