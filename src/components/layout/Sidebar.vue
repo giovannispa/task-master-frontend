@@ -1,7 +1,8 @@
 <template>
   <!-- Sidebar -->
-  <aside class="flex w-64 flex-col pt-18 pb-6 bg-gray-800">
-    <a class="flex items-center justify-center gap-x-4 text-2xl font-medium text-white bg-gray-700 h-12">
+  <aside class="flex w-64 flex-col pt-18 pb-6 bg-gray-800 transition-all
+              duration-200 ease-in-out" :style="{ width: sidebarWidth }">
+    <a class="flex items-center justify-center gap-x-4 text-2xl font-medium text-white bg-gray-700 h-12 overflow-hidden">
       <span>
         Task Master
       </span>
