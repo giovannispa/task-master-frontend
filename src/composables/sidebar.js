@@ -1,10 +1,11 @@
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
+import {useState} from "../composables/state";
 
-export const collapsed = ref(false)
-export const toggleSidebar = () => (collapsed.value = !collapsed.value)
+export const [isCollapsed, setCollapsed] = useState(true);
+export const toggleSidebar = () => setCollapsed(!isCollapsed.value);
 
 export const SIDEBAR_WIDTH = 16
 export const SIDEBAR_WIDTH_COLLAPSED = 0
 export const sidebarWidth = computed(
-    () => `${collapsed.value ? SIDEBAR_WIDTH_COLLAPSED : SIDEBAR_WIDTH}rem`
+    () => `${isCollapsed.value ? SIDEBAR_WIDTH : SIDEBAR_WIDTH_COLLAPSED}rem`
 )

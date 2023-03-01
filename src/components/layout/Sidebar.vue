@@ -8,41 +8,41 @@
       </span>
     </a>
 
-    <ul class="flex flex-1 flex-col gap-y-8 px-8 pt-8">
+    <ul class="flex flex-1 flex-col gap-y-8 px-8 pt-8" v-show="isCollapsed">
       <li>
         <NavLink url="/">
           <IconHome/>
-          Home
+          <span>Home</span>
         </NavLink>
       </li>
       <li>
         <NavLink url="/projetos">
           <IconProjects/>
-          Projetos
+          <span>Projetos</span>
         </NavLink>
       </li>
       <li>
         <NavLink url="/tarefas">
           <IconIssues/>
-          Tarefas
+          <span>Tarefas</span>
         </NavLink>
       </li>
       <li>
         <NavLink url="/equipes">
           <IconTeams/>
-          Equipes
+          <span>Equipes</span>
         </NavLink>
       </li>
       <li>
         <NavLink url="/relatorios">
           <IconReport/>
-          Relatórios
+          <span>Relatórios</span>
         </NavLink>
       </li>
       <li>
         <NavLink url="/usuarios">
           <IconUsers/>
-          Usuários
+          <span>Usuários</span>
         </NavLink>
       </li>
     </ul>
@@ -58,7 +58,7 @@ import IconIssues from "../icons/IconIssues.vue";
 import IconTeams from "../icons/IconTeams.vue";
 import IconReport from "../icons/IconReport.vue";
 import IconUsers from "../icons/IconUsers.vue";
-import { sidebarWidth } from "../../composables/sidebar";
+import { sidebarWidth, isCollapsed } from "../../composables/sidebar";
 </script>
 
 <style scoped>

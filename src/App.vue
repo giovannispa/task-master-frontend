@@ -2,7 +2,7 @@
   <div class="flex min-h-screen w-full font-sans bg-gray-300">
     <Sidebar/>
     <main class="flex min-h-screen flex-1 flex-col">
-      <Header />
+      <Header/>
       <div class="w-full">
         <div class="w-full min-h-screen">
           <router-view />
