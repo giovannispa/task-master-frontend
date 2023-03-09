@@ -10,7 +10,7 @@ import IconCog from "../components/icons/IconCog.vue";
 <template>
   <div class="container mx-auto">
     <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
-      <div class="max-w-xs md:max-w-full bg-white p-2 m-2 rounded-md shadow-md">
+      <div class="max-w-xs md:max-w-full bg-white p-2 m-2 rounded-md shadow-md ml-7 md:ml-0">
         <div>
           <h1 class="text-cyan-800 font-bold mt-2">Últimas Tasks</h1>
           <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
@@ -123,7 +123,7 @@ import IconCog from "../components/icons/IconCog.vue";
           </ul>
         </div>
       </div>
-      <div class="max-w-xs md:max-w-full bg-white p-2 m-2 rounded-md shadow-md h-[510px]">
+      <div class="max-w-xs md:max-w-full bg-white p-2 m-2 rounded-md shadow-md h-[510px] ml-7 md:ml-0">
         <div>
           <h1 class="text-cyan-800 font-bold mt-2">Status dos projetos</h1>
           <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
@@ -166,7 +166,7 @@ import IconCog from "../components/icons/IconCog.vue";
           </div>
         </div>
       </div>
-      <div class="max-w-xs md:max-w-full bg-white p-2 m-2 rounded-md shadow-md h-{420px}">
+      <div class="max-w-xs md:max-w-full bg-white p-2 m-2 rounded-md shadow-md h-{420px} ml-7 md:ml-0">
         <div>
           <h1 class="text-cyan-800 font-bold mt-2">Projetos ativos</h1>
           <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
@@ -297,7 +297,7 @@ import IconCog from "../components/icons/IconCog.vue";
           </div>
         </div>
       </div>
-      <div class="max-w-xs md:max-w-full bg-white p-2 m-2 rounded-md shadow-md h-{420px}">
+      <div class="max-w-xs md:max-w-full bg-white p-2 m-2 rounded-md shadow-md h-{420px} ml-7 md:ml-0">
         <div>
           <h1 class="text-cyan-800 font-bold mt-2">Membros da equipe</h1>
           <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
