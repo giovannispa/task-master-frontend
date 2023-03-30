@@ -4,6 +4,9 @@
     <template v-if="typeof props.title === 'string'">
       {{ props.title }}
     </template>
+    <template v-else-if="props.title.type === 'icon'">
+      <component :is="props.title.icon" />
+    </template>
     <template v-else>
       <img class="inline-block h-7 w-7 rounded-full ring-2 ring-white cursor-pointer" :src="props.title.src" alt="title">
     </template>
