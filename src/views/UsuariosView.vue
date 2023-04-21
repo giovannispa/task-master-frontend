@@ -29,11 +29,8 @@
 
 <script setup>
 
-import IconShowMore from "../components/icons/IconShowMore.vue";
 import IconPlus from "../components/icons/IconPlus.vue";
-import Dropdown from "../components/Dropdown.vue";
-import DropdownItem from "../components/DropdownItem.vue";
-import CardUsers from "../components/CardUsers.vue";
+import CardUsers from "../components/cards/CardUsers.vue";
 </script>
 
 <style scoped>

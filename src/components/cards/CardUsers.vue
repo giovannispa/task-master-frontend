@@ -36,8 +36,8 @@
 
 <script setup>
 
-import Dropdown from "./Dropdown.vue";
-import DropdownItem from "./DropdownItem.vue";
+import Dropdown from "../Dropdown.vue";
+import DropdownItem from "../DropdownItem.vue";
 
 const props = defineProps({
   name: {

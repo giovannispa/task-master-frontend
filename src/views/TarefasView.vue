@@ -54,7 +54,7 @@
 import { reactive } from 'vue';
 import { Container, Draggable } from "vue3-smooth-dnd";
 import { initialCards } from "../initialCards";
-import Card from "../components/Card.vue";
+import Card from "../components/cards/CardTasks.vue";
 
 const cards = reactive({
   backlog: initialCards.backlog,

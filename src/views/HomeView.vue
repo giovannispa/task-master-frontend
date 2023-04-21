@@ -1,13 +1,3 @@
-<script setup>
-
-import MapaProjetos from "../components/MapaProjetos.vue";
-import IconArrowLongLeft from "../components/icons/IconArrowLongLeft.vue";
-import IconArrowLongRight from "../components/icons/IconArrowLongRight.vue";
-import IconInformationCircle from "../components/icons/IconInformationCircle.vue";
-import IconCog from "../components/icons/IconCog.vue";
-import Card from "../components/Card.vue";
-</script>
-
 <template>
   <div class="container mx-auto">
     <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
@@ -354,3 +344,13 @@ import Card from "../components/Card.vue";
     </div>
   </div>
 </template>
+
+<script setup>
+
+import MapaProjetos from "../components/MapaProjetos.vue";
+import IconArrowLongLeft from "../components/icons/IconArrowLongLeft.vue";
+import IconArrowLongRight from "../components/icons/IconArrowLongRight.vue";
+import IconInformationCircle from "../components/icons/IconInformationCircle.vue";
+import IconCog from "../components/icons/IconCog.vue";
+import Card from "../components/cards/CardTasks.vue";
+</script>
