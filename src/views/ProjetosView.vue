@@ -7,9 +7,9 @@
       </a>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
-      <CardProjetos title="Task-master Front-end" status="Completo" date-limit="25/05/2023" />
-      <CardProjetos title="Task-master Front-end" status="Completo" date-limit="25/05/2023" />
-      <CardProjetos title="Task-master Front-end" status="Completo" date-limit="25/05/2023" />
+      <CardProjetos title="Task-master Front-end" status="Completo" date-limit="25/05/2023" equipe="Teste" />
+      <CardProjetos title="Task-master Front-end" status="Completo" date-limit="25/05/2023" equipe="Teste" />
+      <CardProjetos title="Task-master Front-end" status="Completo" date-limit="25/05/2023" equipe="Teste" />
     </div>
   </div>
 </template>

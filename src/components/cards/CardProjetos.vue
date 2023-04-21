@@ -34,6 +34,10 @@
         <p>Data limite</p>
         <p>{{ props.dateLimit }}</p>
       </div>
+      <div>
+        <p>Equipe</p>
+        <a href="">{{ props.equipe }}</a>
+      </div>
     </div>
     <div class="mt-auto">
       <div class="flex">
@@ -63,6 +67,11 @@ import Progressbar from "../ui/Progressbar.vue";
 
 const props = defineProps({
   title: {
+    type: String,
+    default: undefined
+  },
+
+  equipe: {
     type: String,
     default: undefined
   },
