@@ -5,7 +5,7 @@
       <Header/>
       <div class="w-full">
         <div class="w-full min-h-screen">
-          <router-view />
+          <slot/>
         </div>
       </div>
       <Footer/>
