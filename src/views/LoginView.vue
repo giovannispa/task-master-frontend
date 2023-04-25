@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center h-screen bg-[#607D8B]">
+  <div class="flex justify-center items-center h-screen bg-[#607D8B] p-2 md:p-0">
     <div class="w-96 p-6 bg-white shadow-lg rounded-md">
       <div class="flex justify-center items-center">
         <icon-users/>
