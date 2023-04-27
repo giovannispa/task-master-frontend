@@ -13,32 +13,32 @@
     </div>
 
     <div class="flex">
-      <div class="bg-white w-96 h-[700px] rounded-xl shadow-slate-300 mt-2 p-1">
-        <h2 class="mb-3.5 p-3">Backlog</h2>
+      <div class="lane">
+        <h2 class="lane-title">Backlog</h2>
         <Container group-name="board" @drag-start="handleDragStart('backlog', $event)" @drop="handleDrop('backlog', $event)" :get-child-payload="getChildPayload">
           <Draggable v-for="card in cards.backlog" :key="card.id">
             <Card title="Distribuir tarefas" user-image="https://i.imgur.com/OZaT7jl.png" :text="card.text" date="22/02/2023"/>
           </Draggable>
         </Container>
       </div>
-      <div class="bg-white w-96 h-[700px] rounded-xl shadow-slate-300 mt-2 ml-2 p-1">
-        <h2 class="mb-3.5 p-3">Em desenvolvilmento</h2>
+      <div class="lane">
+        <h2 class="lane-title">Em desenvolvilmento</h2>
         <Container group-name="board" @drag-start="handleDragStart('dev', $event)" @drop="handleDrop('dev', $event)" :get-child-payload="getChildPayload">
           <Draggable v-for="card in cards.dev" :key="card.id">
             <Card title="Distribuir tarefas" user-image="https://i.imgur.com/OZaT7jl.png" :text="card.text" date="22/02/2023"/>
           </Draggable>
         </Container>
       </div>
-      <div class="bg-white w-96 h-[700px] rounded-xl shadow-slate-300 mt-2 ml-2 p-1">
-        <h2 class="mb-3.5 p-3">Testes</h2>
+      <div class="lane">
+        <h2 class="lane-title">Testes</h2>
         <Container group-name="board" @drag-start="handleDragStart('test', $event)" @drop="handleDrop('test', $event)" :get-child-payload="getChildPayload">
           <Draggable v-for="card in cards.test" :key="card.id">
             <Card title="Distribuir tarefas" user-image="https://i.imgur.com/OZaT7jl.png" :text="card.text" date="22/02/2023"/>
           </Draggable>
         </Container>
       </div>
-      <div class="bg-white w-96 h-[700px] rounded-xl shadow-slate-300 mt-2 ml-2 p-1">
-        <h2 class="mb-3.5 p-3">Concluido</h2>
+      <div class="lane">
+        <h2 class="lane-title">Concluido</h2>
         <Container group-name="board" @drag-start="handleDragStart('conclusion', $event)" @drop="handleDrop('conclusion', $event)" :get-child-payload="getChildPayload">
           <Draggable v-for="card in cards.conclusion" :key="card.id">
             <Card title="Distribuir tarefas" user-image="https://i.imgur.com/OZaT7jl.png" :text="card.text" date="22/02/2023"/>
@@ -46,7 +46,6 @@
         </Container>
       </div>
     </div>
-
   </div>
 </template>
 

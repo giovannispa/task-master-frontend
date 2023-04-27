@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-sm p-2 mt-2 mx-4 md:mx-0 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <div class="divide-y divide-solid">
+  <div class="box">
+    <div class="box-title">
       <div class="flex items-center">
         <div class="grow">
           <h5 class="font-bold">

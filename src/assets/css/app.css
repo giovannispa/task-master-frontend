@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .home-box {
+        @apply max-w-xs md:max-w-full bg-white p-2 m-2 rounded-md shadow-md ml-7 md:ml-0;
+    }
+
+    .home-box-title h1 {
+        @apply text-cyan-800 font-bold mt-2;
+    }
+
+    .separator {
+        @apply h-px my-4 bg-gray-200 border-0 dark:bg-gray-700;
+    }
+
+    .box {
+        @apply max-w-sm p-2 mt-2 mx-4 md:mx-0 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700;
+    }
+
+    .box-title {
+        @apply divide-y divide-solid;
+    }
+
+    .lane {
+        @apply bg-white w-96 h-[700px] rounded-xl shadow-slate-300 mt-2 p-1 mx-2;
+    }
+
+    .lane-title {
+        @apply mb-3.5 p-3 font-semibold;
+    }
+
+    .user-box {
+        @apply max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700;
+    }
+
+    .user-box-title {
+        @apply flex justify-end px-4 pt-4;
+    }
+
+    .user-box-body {
+        @apply flex flex-col items-center pb-10;
+    }
+}

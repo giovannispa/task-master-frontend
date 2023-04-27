@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-    <div class="flex justify-end px-4 pt-4">
+  <div class="user-box">
+    <div class="user-box-title">
       <Dropdown :title="{ type: 'icon', icon: 'IconShowMore' }">
         <DropdownItem :to="{ name: 'projetos'}">
           <div class="flex">
@@ -14,7 +14,7 @@
         </DropdownItem>
       </Dropdown>
     </div>
-    <div class="flex flex-col items-center pb-10">
+    <div class="user-box-body">
       <img class="mb-3 w-24 h-24 rounded-full shadow-lg" :src="props.image" alt="Bonnie image">
       <h3 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">{{ props.name }}</h3>
       <span class="text-sm text-gray-500 dark:text-gray-400">{{ props.category }}</span>
